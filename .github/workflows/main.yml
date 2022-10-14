@@ -42,7 +42,7 @@ jobs:
             if [ ! -d $DIR ]
             then
               mkdir server &&
-              git clone https://github.com/CodePanthers/node-aws-ec2-github-actions.git server &&
+              git clone https://github.com/ronaks9065/Node-Ec2-Github-Actions.git server &&
               cd server &&
               npm i
             else
