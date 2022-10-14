@@ -38,7 +38,7 @@ jobs:
             DIR="/home/ubuntu/server"
             pm2 delete all
             cd /home/ubuntu
-            
+             
             if [ ! -d $DIR ]
             then
               mkdir server &&
