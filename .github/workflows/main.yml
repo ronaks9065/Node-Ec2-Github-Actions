@@ -37,7 +37,7 @@ jobs:
             #Now we have got the access of EC2 and we will start the deploy .
             DIR="/home/ubuntu/server"
             pm2 delete all
-            cd /home/ubuntu
+            cd /home/ubuntu 
              
             if [ ! -d $DIR ]
             then
