@@ -28,11 +28,11 @@ jobs:
         env:
             PRIVATE_KEY: ${{ secrets.EC2_PRIVATE_KEY  }}
             HOSTNAME : ec2-52-66-57-150.ap-south-1.compute.amazonaws.com
-            USER_NAME : ${{ secrets.USER  }}
+            USER_NAME : ubuntu
             
         run: |
           echo "$PRIVATE_KEY" > private_key && chmod 600 private_key
-          ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@ec2-52-66-57-150.ap-south-1.compute.amazonaws.com '
+          ssh -o StrictHostKeyChecking=no -i private_key ubuntu@ec2-52-66-57-150.ap-south-1.compute.amazonaws.com '
           
             #Now we have got the access of EC2 and we will start the deploy .
             DIR="/home/ubuntu/server"
